@@ -5,7 +5,7 @@ import { GetStarted } from "./index";
 
 const Hero = () => {
   return (
-    <section className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+    <section className={`flex md:flex-row flex-col ${styles.paddingY} relative`}>
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
@@ -60,6 +60,8 @@ const Hero = () => {
       <div className={`ss:hidden ${styles.flexCenter}`}>
         <GetStarted/>
       </div>
+
+      <div className="absolute w-[50%] h-[50%] top-0 z-[5] -left-1/2 white__gradient"/>
     </section>
   );
 }
